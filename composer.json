@@ -1,9 +1,9 @@
 {
-    "name": "shivas/versioning-bundle",
+    "name": "20steps/versioning-bundle",
     "type": "symfony-bundle",
     "keywords": ["semantic", "version", "versioning", "semver"],
     "description": "Symfony2|3 application versioning, simple console command to manage version (with handlers e.g. git tag) of your application using Semantic Versioning 2.0.0 recomendations",
-    "homepage": "https://github.com/shivas/versioning-bundle",
+    "homepage": "https://github.com/20steps/versioning-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -13,14 +13,14 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/shivas/versioning-bundle/issues",
-        "wiki": "https://github.com/shivas/versioning-bundle/wiki"
+        "issues": "https://github.com/20steps/versioning-bundle/issues",
+        "wiki": "https://github.com/20steps/versioning-bundle/wiki"
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.0",
         "herrera-io/version": "~1.0",
-        "symfony/symfony": "~2.8|~3.0",
-        "symfony/process": "~2.2|~3.0"
+        "symfony/symfony": "~3.0",
+        "symfony/process": "~3.0"
     },
     "require-dev": {
         "composer/composer": "^1.0@dev"
