@@ -15,12 +15,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Yaml\Parser;
 use Symfony\Component\Yaml\Yaml;
 
-class VersionBumpCommand extends ContainerAwareCommand
+class BricksApplicationVersionBumpCommand extends ContainerAwareCommand
 {
     protected function configure()
     {
         $this
-            ->setName('bricks:app:version:bump')
+            ->setName('bricks:application:version:bump')
             ->setDescription(
                 'Bumping of application version using one of available handlers'
             )
