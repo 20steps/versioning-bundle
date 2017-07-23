@@ -9,12 +9,12 @@ class HandlerCompilerPass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $container)
     {
-        if (!$container->hasDefinition('shivas_versioning.manager')) {
+        if (!$container->hasDefinition('versioning.manager')) {
             return;
         }
 
-        $definition = $container->getDefinition('shivas_versioning.manager');
-        $handlers = $container->findTaggedServiceIds('shivas_versioning.handler');
+        $definition = $container->getDefinition('versioning.manager');
+        $handlers = $container->findTaggedServiceIds('versioning.handler');
 
         foreach ($handlers as $id => $attributes) {
             $attributes = reset($attributes);

@@ -67,7 +67,7 @@ class ParameterHandler implements HandlerInterface
      */
     private function readParametersFile()
     {
-        $parametersFile = sprintf('%s/config/%s', $this->path, $this->versionFile);
+        $parametersFile = sprintf('%s/../etc/parameters/%s', $this->path, $this->versionFile);
         if (!is_file($parametersFile)) {
             return array('parameters');
         }

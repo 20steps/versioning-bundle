@@ -28,6 +28,5 @@
     "autoload": {
         "psr-0": { "Shivas\\VersioningBundle": "" }
     },
-    "minimum-stability": "dev",
-    "target-dir": "Shivas/VersioningBundle"
+    "minimum-stability": "dev"
 }
