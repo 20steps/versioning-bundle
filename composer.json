@@ -2,13 +2,18 @@
     "name": "20steps/versioning-bundle",
     "type": "symfony-bundle",
     "keywords": ["semantic", "version", "versioning", "semver"],
-    "description": "Symfony2|3 application versioning, simple console command to manage version (with handlers e.g. git tag) of your application using Semantic Versioning 2.0.0 recomendations",
+    "description": "Symfony3 application versioning, simple console command to manage version (with handlers e.g. git tag) of your application using Semantic Versioning 2.0.0 recomendations",
     "homepage": "https://github.com/20steps/versioning-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Audrius Karabanovas",
             "email": "audrius@karabanovas.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Helmut Hoffer von Ankershoffen",
+            "email": "hhva@20steps.de",
             "role": "Developer"
         }
     ],
