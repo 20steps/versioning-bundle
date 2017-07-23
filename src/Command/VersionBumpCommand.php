@@ -20,7 +20,7 @@ class VersionBumpCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('app:version:bump')
+            ->setName('bricks:app:version:bump')
             ->setDescription(
                 'Bumping of application version using one of available handlers'
             )
@@ -37,12 +37,12 @@ class VersionBumpCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $kernelRoot = $this->getContainer()->getParameter('kernel.root_dir');
-        $file       = $this->getContainer()->getParameter('shivas_versioning.version_file');
-        $param      = $this->getContainer()->getParameter('shivas_versioning.version_parameter');
-        $paramFile  = "{$kernelRoot}/config/{$file}";
+        $file       = $this->getContainer()->getParameter('versioning.version_file');
+        $param      = $this->getContainer()->getParameter('versioning.version_parameter');
+        $paramFile  = "{$kernelRoot}/../etc/parameters/{$file}";
 
         /** @var VersionsManager $manager */
-        $manager = $this->getContainer()->get('shivas_versioning.manager');
+        $manager = $this->getContainer()->get('versioning.manager');
 
         if ($input->getOption('list-handlers')) {
             $this->listHandlers($manager, $output);
